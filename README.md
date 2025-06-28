@@ -32,3 +32,36 @@ A group of consumers that collectively consume messages from a topic. Kafka ensu
 ### 7. **Zookeeper**
 Zookeeper manages Kafka brokers by maintaining cluster metadata and performing leader elections. Kafka is transitioning to **KRaft mode** (Kafka Raft Metadata mode) to eliminate the need for Zookeeper.
 
+## ⚙️ Kafka Setup Using Docker
+### 📦 Docker Compose for Kafka + Zookeeper
+
+version: "3"
+services:
+    zookeeper:
+        image: zookeeper
+        container_name: zookeeper
+        ports:
+            - "2181:2181"
+    kafka:
+        image: confluentinc/cp-kafka
+        depends_on:
+            - zookeeper
+        ports:
+            - "9092:9092"
+        expose:
+            - "29092"
+        environment:
+            KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"
+            KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+            KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+            KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092
+            KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: "1"
+            KAFKA_MIN_INSYNC_REPLICAS: "1"
+    kafka-ui:
+        container_name: kafka-ui
+        image: provectuslabs/kafka-ui
+        ports:
+            - 8080:8080
+        environment:
+            DYNAMIC_CONFIG_ENABLED: true
+
