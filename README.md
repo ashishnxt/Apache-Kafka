@@ -35,6 +35,7 @@ Zookeeper manages Kafka brokers by maintaining cluster metadata and performing l
 ## ⚙️ Kafka Setup Using Docker
 ### 📦 Docker Compose for Kafka + Zookeeper
 
+```
 version: "3"
 services:
     zookeeper:
@@ -64,4 +65,4 @@ services:
             - 8080:8080
         environment:
             DYNAMIC_CONFIG_ENABLED: true
-
+```
