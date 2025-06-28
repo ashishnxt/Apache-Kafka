@@ -1,4 +1,4 @@
-# Apache Kafka
+# Apache Kafka 
 ## 📘 Overview
 Apache Kafka is a **distributed event streaming platform** capable of handling trillions of events a day. It was originally developed at LinkedIn and later open-sourced through the Apache Software Foundation. Kafka is designed for high throughput, fault tolerance, horizontal scalability, and low latency.
 
@@ -7,15 +7,15 @@ Kafka provides:
 - **Publish and subscribe to streams of records** in a fault-tolerant way.
 - **Store streams of records** durably.
 - **Process streams of records** as they occur.
+## Prerequisite
+- Knowledge
+    - Node.JS Intermediate level
+    - Experience with designing distributed systems
+- Tools
+    - Node.js: [﻿Download Node.JS](https://nodejs.org/en) 
+    - Docker: [﻿Download Docker](https://www.docker.com/) 
+    - VsCode: [﻿Download VSCode](https://code.visualstudio.com/) 
 
-Prerequisite
-Knowledge
-Node.JS Intermediate level
-Experience with designing distributed systems
-Tools
-Node.js: Download Node.JS
-Docker: Download Docker
-VsCode: Download VSCode
 
 ---
 
