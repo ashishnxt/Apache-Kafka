@@ -7,6 +7,16 @@ Kafka provides:
 - **Publish and subscribe to streams of records** in a fault-tolerant way.
 - **Store streams of records** durably.
 - **Process streams of records** as they occur.
+
+Prerequisite
+Knowledge
+Node.JS Intermediate level
+Experience with designing distributed systems
+Tools
+Node.js: Download Node.JS
+Docker: Download Docker
+VsCode: Download VSCode
+
 ---
 
 ## 📌 Key Concepts Explained
