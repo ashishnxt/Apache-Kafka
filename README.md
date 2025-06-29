@@ -80,6 +80,7 @@ services:
 ```
 
 
-![diagram-export-29-6-2025-11_43_53-am](https://github.com/user-attachments/assets/db80dbc5-88cd-40d7-8583-033f73ac3a02)
+![image](https://github.com/user-attachments/assets/18044855-6f86-4bcf-8882-b51408f03a58)
+
 
 
