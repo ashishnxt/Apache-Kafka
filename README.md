@@ -78,3 +78,7 @@ services:
         environment:
             DYNAMIC_CONFIG_ENABLED: true
 ```
+
+
+![image](https://github.com/user-attachments/assets/ff444317-2833-49a5-9607-c847a04dd929)
+
